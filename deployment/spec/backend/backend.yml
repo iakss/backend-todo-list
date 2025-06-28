@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-todo
-  namespace: T1task
+  namespace: t1task
 spec:
   replicas: 1
   selector:
@@ -38,6 +38,6 @@ spec:
             - name: DATABASE_PORT
               value: '5432'
             - name: DATABASE_URL
-              value: postgres.practice.svc.cluster.local
+              value: postgres.t1task.svc.cluster.local
             - name: DATABASE_NAME
               value: todo_list
