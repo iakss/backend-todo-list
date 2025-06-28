@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
-  namespace: T1task
+  namespace: t1task
 spec:
   replicas: 1
   selector:
